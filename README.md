@@ -2,6 +2,10 @@
 
 **A controlled comparison of parameter-efficient fine-tuning strategies for dialogue summarization.** I adapted Microsoft's Phi-2 language model to summarize conversations, then compared a frozen 4-bit baseline against two Low-Rank Adaptation (LoRA) configurations to study the trade-off between model quality and trainable parameter count.
 
+## Tools and concepts
+
+`Python` · `PyTorch` · `Hugging Face Transformers` · `PEFT/LoRA` · `bitsandbytes` · `Datasets` · `ROUGE` · `Pandas` · `LLM Fine-Tuning` · `Experimental Design`
+
 ## Highlights
 
 - **Model:** [`microsoft/phi-2`](https://huggingface.co/microsoft/phi-2), loaded in 4-bit NF4 precision.
@@ -73,7 +77,3 @@ Next improvements would be to evaluate the full held-out split, run multiple see
 ```
 
 Open `Phi2_QLoRA_Comparison.ipynb` in a **CUDA GPU** notebook environment and execute cells in order. The notebook installs dependencies, prepares the data, evaluates the baseline, trains both LoRA configurations, and exports comparison CSV files to `phi2_lora_outputs/`. It also includes a separate historical-results table so readers can inspect the originally observed results **without rerunning GPU training**. A fresh run can differ due to software versions, hardware, and generation stochasticity. Avoid committing large checkpoints or private tokens.
-
-## Tools and concepts
-
-`Python` · `PyTorch` · `Hugging Face Transformers` · `PEFT/LoRA` · `bitsandbytes` · `Datasets` · `ROUGE` · `Pandas` · `LLM Fine-Tuning` · `Experimental Design`

@@ -1,6 +1,6 @@
 # Phi-2 Dialogue Summarization — QLoRA Ablation Study
 
-**A controlled comparison of parameter-efficient fine-tuning strategies for dialogue summarization.** I adapted Microsoft's Phi-2 language model to summarize conversations, then compared a frozen 4-bit baseline against two Low-Rank Adaptation (LoRA) configurations to study the trade-off between model quality and trainable parameter count.
+**A controlled comparison of parameter-efficient fine-tuning strategies for dialogue summarization.** I adapted Microsoft's Phi-2 language model to summarize conversations, then compared a frozen 4-bit baseline against two Low-Rank Adaptation (LoRA) configurations to study the trade-off between model quality and trainable parameter count. //WIP
 
 ## Tools and concepts
 
